@@ -1,0 +1,34 @@
+@use '../../scss/' as *;
+
+.header {
+  padding: 1rem;
+  border: 3px solid $header-outline;
+  max-width: 750px;
+  margin-inline: auto;
+  border-radius: 15px;
+  @include flex(center, space-between);
+  &__title {
+    img {
+      height: 5rem;
+    }
+  }
+  &__score {
+    background-color: white;
+
+    border-radius: 5px;
+    display: grid;
+    text-align: center;
+    padding-inline: 2.5rem;
+    padding-block: 0.5rem;
+
+    .title {
+      color: $Score-text;
+      font-size: 1.2rem;
+    }
+    .number {
+      font-size: 3rem;
+      font-weight: $fw-lg;
+      color: $dark-text;
+    }
+  }
+}

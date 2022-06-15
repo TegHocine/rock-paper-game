@@ -1,1 +1,21 @@
+@use './scss/' as *;
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;600;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.App {
+  background: linear-gradient(
+    to bottom,
+    $radial-gradient,
+    $radial-gradient-bottom
+  );
+  height: 100vh;
+  font-family: $family;
+  padding-top: 4rem;
+  padding-inline: 2rem;
+
+  margin-inline: auto;
+}
