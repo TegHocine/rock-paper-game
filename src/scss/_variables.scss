@@ -5,17 +5,21 @@
 // The designs were created to the following widths:
 
 $mobile: 375px;
-$desktop: 1366px;
+$desktop: 750px;
 
 // ## Colors
 
 // ### Primary
 
-$scissors-gradient: hsl(39, 89%, 49%) to hsl(40, 84%, 53%);
-$paper-gradient: hsl(230, 89%, 62%) to hsl(230, 89%, 65%);
-$rock-gradient: hsl(349, 71%, 52%) to hsl(349, 70%, 56%);
-$lizard-gradient: hsl(261, 73%, 60%) to hsl(261, 72%, 63%);
-$cyan: hsl(189, 59%, 53%) to hsl(189, 58%, 57%);
+$scissors-gradient: hsl(39, 89%, 49%);
+$scissors-gradient-to: hsl(40, 84%, 53%);
+$paper-gradient: hsl(230, 89%, 62%);
+$paper-gradient-to: hsl(230, 89%, 65%);
+$rock-gradient: hsl(349, 71%, 52%);
+$rock-gradient-to: hsl(349, 70%, 56%);
+
+$cyan: hsl(189, 59%, 53%);
+$cyanTo: hsl(189, 58%, 57%);
 
 // ### Neutral
 

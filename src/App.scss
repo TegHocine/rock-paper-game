@@ -12,10 +12,10 @@
     $radial-gradient,
     $radial-gradient-bottom
   );
-  height: 100vh;
-  font-family: $family;
-  padding-top: 4rem;
-  padding-inline: 2rem;
 
+  font-family: $family;
+  padding-top: 2.5rem;
+  padding-inline: 2rem;
   margin-inline: auto;
+  height: calc(100vh - 2.5rem);
 }

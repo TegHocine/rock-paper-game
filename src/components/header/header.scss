@@ -14,7 +14,6 @@
   }
   &__score {
     background-color: white;
-
     border-radius: 5px;
     display: grid;
     text-align: center;
@@ -23,12 +22,52 @@
 
     .title {
       color: $Score-text;
-      font-size: 1.2rem;
+      font-size: 1.5rem;
     }
     .number {
       font-size: 3rem;
       font-weight: $fw-lg;
       color: $dark-text;
+    }
+  }
+
+  @include tablet {
+    &__title {
+      img {
+        height: 4rem;
+      }
+    }
+    &__score {
+      border-radius: 5px;
+      padding-inline: 2rem;
+      padding-block: 0.5rem;
+
+      .title {
+        font-size: 1.5rem;
+      }
+      .number {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  @include mobile {
+    &__title {
+      img {
+        height: 3rem;
+      }
+    }
+    &__score {
+      border-radius: 5px;
+      padding-inline: 1.5rem;
+      padding-block: 0.3rem;
+
+      .title {
+        font-size: 1rem;
+      }
+      .number {
+        font-size: 1.5rem;
+      }
     }
   }
 }

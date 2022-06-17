@@ -1,5 +1,9 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+
+import PlayerChoice from './routes/playerChoice/PlayerChoice'
+import House from './routes/house/House'
+
 import Header from './components/header/Header'
-import Game from './components/game/Game'
 import Rules from './components/rules/Rules'
 import './App.scss'
 
@@ -7,7 +11,12 @@ function App() {
   return (
     <div className='App'>
       <Header />
-      <Game />
+      <BrowserRouter>
+        <Routes>
+          <Route index element={<PlayerChoice />} />
+          <Route path=':id' element={<House />} />
+        </Routes>
+      </BrowserRouter>
       <Rules />
     </div>
   )
