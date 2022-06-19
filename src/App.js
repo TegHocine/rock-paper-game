@@ -15,6 +15,7 @@ function App() {
         <Routes>
           <Route index element={<PlayerChoice />} />
           <Route path=':id' element={<House />} />
+          <Route path='*' element={<PlayerChoice />} />
         </Routes>
       </BrowserRouter>
       <Rules />
