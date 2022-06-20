@@ -26,11 +26,22 @@
           margin-block: 2.5rem;
           text-transform: uppercase;
         }
+
+        .counter {
+          height: 4.5rem;
+          width: 4.5rem;
+          padding: 1rem;
+          background-color: $dark-text;
+          border-radius: 9999px;
+          display: grid;
+          place-content: center;
+        }
       }
     }
 
     .result {
       margin-top: -8rem;
+      margin-inline: auto;
       text-align: center;
       font-family: $family;
 
