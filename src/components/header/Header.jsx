@@ -4,7 +4,7 @@ import Logo from '../../assets/logo.svg'
 
 import './header.scss'
 
-const Header = () => {
+const Header = ({ score }) => {
   return (
     <div className='header'>
       <div className='header__title'>
@@ -12,7 +12,7 @@ const Header = () => {
       </div>
       <div className='header__score'>
         <div className='title'>Score</div>
-        <div className='number'>12</div>
+        <div className='number'>{score}</div>
       </div>
     </div>
   )

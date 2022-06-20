@@ -1,5 +1,6 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+
+import Image from '../../components/images/Image'
 
 import Rock from '../../assets/icon-rock.svg'
 import Paper from '../../assets/icon-paper.svg'
@@ -17,16 +18,10 @@ const PlayerChoice = () => {
           backgroundImage: `url(${Triangle})`
         }}>
         <div className='top'>
-          <Link to='rock'>
-            <img src={Rock} alt='rock' className='rock pick' />
-          </Link>
-          <Link to='paper'>
-            <img src={Paper} alt='paper' className='paper pick' />
-          </Link>
+          <Image to={'rock'} img={Rock} className='rock' />
+          <Image to={'paper'} img={Paper} className='paper' />
         </div>
-        <Link to='scissors'>
-          <img src={Scissors} alt='scissors' className='scissors pick' />
-        </Link>
+        <Image to={'scissors'} img={Scissors} className='scissors' />
       </div>
     </div>
   )

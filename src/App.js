@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 import PlayerChoice from './routes/playerChoice/PlayerChoice'
@@ -8,13 +9,14 @@ import Rules from './components/rules/Rules'
 import './App.scss'
 
 function App() {
+  const [score, setScore] = useState(0)
   return (
     <div className='App'>
-      <Header />
+      <Header score={score} />
       <BrowserRouter>
         <Routes>
           <Route index element={<PlayerChoice />} />
-          <Route path=':id' element={<House />} />
+          <Route path=':pick' element={<House setScore={setScore} />} />
           <Route path='*' element={<PlayerChoice />} />
         </Routes>
       </BrowserRouter>
